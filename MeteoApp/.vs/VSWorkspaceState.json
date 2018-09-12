@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MeteoApp2",
+    "\\MeteoApp2\\Models",
+    "\\MeteoApp2\\Resources",
+    "\\MeteoApp2\\ViewModels"
+  ],
+  "SelectedNode": "\\MeteoApp2\\ViewModels\\CityViewModel.cs",
+  "PreviewInSolutionExplorer": false
+}

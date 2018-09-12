@@ -1,0 +1,39 @@
+﻿<Window x:Class="MeteoApp2.WeatherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeteoApp2"
+        mc:Ignorable="d"
+        Title="WeatherWindow" Height="405.881" Width="580.713">
+    <Grid Margin="0,0,2,2">
+        <Label Content="Vent" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="341,169,0,0"/>
+        <Label Content="Vitesse :" HorizontalAlignment="Left" Margin="292,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Direction :" HorizontalAlignment="Left" Margin="281,237,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,214,0,0" TextWrapping="Wrap" Text="{Binding Speed}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="350,242,0,0" TextWrapping="Wrap" Text="{Binding Deg}" VerticalAlignment="Top"/>
+
+        <Label Content="Météo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="337,59,0,0" Height="42" Width="79"/>
+        <Label Content="Temps :" HorizontalAlignment="Left" Margin="272,102,0,0" VerticalAlignment="Top" Height="34" Width="60"/>
+        <TextBlock HorizontalAlignment="Left" Margin="332,106,0,0" TextWrapping="Wrap" Text="{Binding Description}" VerticalAlignment="Top" Height="46" Width="115"/>
+
+        <Label Content="Température" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="48,183,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="95,215,0,0" Text="{Binding Temp}" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontWeight="DemiBold" Height="26" Width="61"></TextBlock>
+
+        <Label Content="Coordonnées" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,10,0,0"/>
+
+        <Label Content="Pays :" HorizontalAlignment="Left" Margin="41,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ville :" HorizontalAlignment="Left" Margin="41,73,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="91,78,0,0" TextWrapping="Wrap" Text="{Binding Pays}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="91,43,0,0" TextWrapping="Wrap" Text="{Binding Ville}" VerticalAlignment="Top"/>
+
+        <ComboBox  HorizontalAlignment="Left" VerticalAlignment="Top" ItemsSource="{Binding ListUnites}" SelectedItem="{Binding SelectedUnite}" Width="49" Margin="30,215,0,0" Height="27"/>
+        <Label Content="Longitude :" HorizontalAlignment="Left" Margin="30,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Latitude :" HorizontalAlignment="Left" Margin="41,116,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,151,0,0" TextWrapping="Wrap" Text="{Binding Lon}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="105,120,0,0" TextWrapping="Wrap" Text="{Binding Lat}" VerticalAlignment="Top"/>
+
+        <Button Content="Quitter"  Command="{Binding Exit}" CommandParameter="{Binding ElementName=ButtonExit}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,278,0,0"/>
+
+    </Grid>
+</Window>

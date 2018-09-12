@@ -1,0 +1,19 @@
+﻿<Window x:Class="MeteoApp2.CoordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeteoApp2"
+        mc:Ignorable="d"
+        Title="CoordWindow" Height="193.746" Width="317.347">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="16,10,0,0" TextWrapping="Wrap" Text="Veuillez entrer vos coordonnées en degrés décimaux" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,80,0,0" TextWrapping="Wrap" Text="Longitude" VerticalAlignment="Top" RenderTransformOrigin="3.352,-0.065"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,54,0,0" TextWrapping="Wrap" Text="Latitude" VerticalAlignment="Top" Height="26" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="126,54,0,0" TextWrapping="Wrap" Text="{Binding Lat, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="126,76,0,0" TextWrapping="Wrap" Text="{Binding Lon, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <Button Command="{Binding Proceed}" Content="Chercher" HorizontalAlignment="Left" Margin="58,104,0,0" VerticalAlignment="Top" Width="90" Height="22"/>
+        <Button Command="{Binding Back}" Content="Retour" HorizontalAlignment="Left" Margin="156,104,0,0" VerticalAlignment="Top" Width="90" Height="22"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="MeteoApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeteoApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="173.967" Width="510.665">
+    <Grid>
+        <Button Command="{Binding ByCity}" Content="Chercher par ville" HorizontalAlignment="Left" Margin="25,45,0,0" VerticalAlignment="Top" Width="150" Height="41"/>
+        <Button Command="{Binding ByCoord}" Content="Chercher par coordonnées" HorizontalAlignment="Left" Margin="335,45,0,0" VerticalAlignment="Top" Width="150" Height="41"/>
+        <Button Command="{Binding LocateMe}" Content="Localisez moi !" HorizontalAlignment="Left" Margin="180,45,0,0" VerticalAlignment="Top" Width="150" Height="41"/>
+        <Button Command="{Binding Exit}" Content="Quitter" HorizontalAlignment="Left" Margin="180,103,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Veuillez sélectionner une option de recherche" VerticalAlignment="Top" FontSize="17" Height="22" Width="384" Margin="72,10,0,0"/>
+    </Grid>
+</Window>

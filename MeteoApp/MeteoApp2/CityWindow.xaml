@@ -1,0 +1,18 @@
+﻿<Window x:Class="MeteoApp2.CityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeteoApp2"
+        mc:Ignorable="d"
+        Title="CityWindow" Height="179.114" Width="302.896">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="15,74,0,0" TextWrapping="Wrap" Text="Ville" VerticalAlignment="Top" RenderTransformOrigin="3.352,-0.065"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,48,0,0" TextWrapping="Wrap" Text="Pays" VerticalAlignment="Top" Height="26" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="83,47,0,0" TextWrapping="Wrap" Text="{Binding BoxPays, Mode=TwoWay}" VerticalAlignment="Top" Width="192"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="83,70,0,0" TextWrapping="Wrap" Text="{Binding BoxVille, Mode=TwoWay}" VerticalAlignment="Top" Width="192"/>
+        <Button Command="{Binding Valider}" Content="Chercher" HorizontalAlignment="Left" Margin="15,98,0,0" VerticalAlignment="Top" Width="128" Height="27"/>
+        <Button Command="{Binding Back}" Content="Retour" HorizontalAlignment="Left" Margin="148,98,0,0" VerticalAlignment="Top" Width="128" Height="27"/>
+        <TextBlock HorizontalAlignment="Left" Height="39" Margin="15,3,0,0" VerticalAlignment="Top" TextAlignment="Center" Width="260" TextWrapping="Wrap"><Run Text="Veuillez "/><Run Text="saisir "/><Run Text="au moins la ville pour lancer votre recherche"/></TextBlock>
+    </Grid>
+</Window>
